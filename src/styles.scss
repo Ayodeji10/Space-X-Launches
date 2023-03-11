@@ -1,0 +1,227 @@
+body {
+  background-color: black;
+  * {
+    color: #fff;
+    outline: none;
+  }
+  .container-fluid {
+    padding: 0 !important;
+  }
+  .navigation-container {
+    padding: 20px 0;
+    background-color: #fff;
+    .navbar-brand {
+      width: 230px;
+    }
+  }
+  h1 {
+    margin: 50px 0 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input {
+    width: 500px;
+    border: 1px solid rgba(225, 230, 239, 1);
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+  }
+  button {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+  }
+  .switch {
+    cursor: pointer;
+    i {
+      margin-left: 10px;
+    }
+  }
+  .fa-spinner {
+    font-size: 45px;
+  }
+  .launch-card {
+    box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.1) inset;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    * {
+      color: black;
+    }
+    img {
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+    }
+    p.date {
+      font-size: 16px;
+      color: saddlebrown;
+      i {
+        margin-right: 10px;
+      }
+    }
+    h4 {
+      font-size: 18px;
+      i {
+        font-size: 14px;
+        margin-right: 10px;
+        &.fa-thumbs-up,
+        &.fa-thumbs-down {
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+    h6 {
+      font-size: 11px;
+      i {
+        font-size: 14px;
+        margin-right: 10px;
+        &.fa-thumbs-up,
+        &.fa-thumbs-down {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      outline: none;
+      color: rgb(55, 55, 96);
+      display: block;
+      margin-top: 20px;
+      text-align: right;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .list-view {
+    border-bottom: solid 1px grey;
+    padding-bottom: 20px;
+    .rounded-img {
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      img {
+        height: auto;
+        height: 100% !important;
+        object-fit: cover;
+        object-position: top;
+        width: 100% !important;
+      }
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .single-launch {
+    .back {
+      display: inline-block;
+      background-color: #fff;
+      text-decoration: none;
+      color: black;
+      border-radius: 5px;
+      margin-bottom: 40px;
+      padding: 15px 25px;
+      i {
+        color: black;
+        margin-right: 10px;
+      }
+    }
+    .img-container {
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+      border: solid 2px white;
+      padding: 10px;
+      margin: 0 50px 20px 0;
+    }
+    iframe {
+      box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.1) inset;
+      border-radius: 10px;
+      border: solid 1px rgba(187, 185, 185, 0.5);
+      margin-bottom: 20px;
+    }
+    h4 i {
+      margin-right: 20px;
+    }
+  }
+  .search-page {
+    select {
+      color: white;
+      background-color: black;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    input {
+      width: 300px;
+    }
+    .list-view {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .navigation-container {
+      .navbar-brand {
+        width: 130px;
+      }
+    }
+    input {
+      width: 200px;
+    }
+    .list-view {
+      p {
+        font-size: 12px;
+      }
+      a {
+        font-size: 12px;
+      }
+    }
+    .search-page select {
+      margin-left: 0;
+    }
+    .single-launch {
+      .back {
+        margin-bottom: 20px;
+        padding: 5px 15px;
+      }
+      .img-container {
+        height: 150px;
+        width: 150px;
+        margin: 0 20px 20px 0;
+      }
+      h4 {
+        font-size: 14px;
+        i {
+          margin-right: 10px;
+        }
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+}
